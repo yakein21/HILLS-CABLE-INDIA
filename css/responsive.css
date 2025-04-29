@@ -1,0 +1,539 @@
+/* 
+* Hills Cab - Responsive Stylesheet
+* A German Innovation in Wires and Cables
+*/
+
+/* ======= Responsive Breakpoints ======= */
+
+/* Large Desktops (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Medium Desktops (992px to 1199px) */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    /* Header */
+    .menu-item {
+        margin: 0 10px;
+    }
+    
+    /* Hero Section */
+    .hero-title {
+        font-size: 42px;
+    }
+    
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    /* Applications Grid */
+    .applications-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Product Slider */
+    .slide {
+        padding: 40px;
+    }
+    
+    .slide-content h3 {
+        font-size: 28px;
+    }
+    
+    /* About Section */
+    .about-content {
+        gap: 30px;
+    }
+    
+    /* Footer */
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    /* Products Grid */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Technologies Grid */
+    .technology-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contact Cards */
+    .contact-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Locations Grid */
+    .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Related Products */
+    .related-products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablets (768px to 991px) */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    /* Header */
+    .nav-menu {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    /* Hero Section */
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-description {
+        font-size: 16px;
+    }
+    
+    /* Features Section */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Product Slider */
+    .slide {
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .slide-content {
+        flex: 0 0 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .slide-image {
+        flex: 0 0 100%;
+    }
+    
+    /* About Section */
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-text {
+        flex: 0 0 100%;
+        order: 2;
+    }
+    
+    .about-image {
+        flex: 0 0 100%;
+        order: 1;
+        margin-bottom: 30px;
+    }
+    
+    .facility-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .facility-image {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    /* CTA Section */
+    .cta-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .cta-content {
+        text-align: center;
+    }
+    
+    .cta-image {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    /* Applications Grid */
+    .applications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer */
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-bottom-links {
+        justify-content: center;
+    }
+    
+    /* Company Overview */
+    .company-overview-content {
+        flex-direction: column;
+    }
+    
+    .overview-text {
+        flex: 0 0 100%;
+        order: 2;
+    }
+    
+    .overview-image {
+        flex: 0 0 100%;
+        order: 1;
+        margin-bottom: 30px;
+    }
+    
+    /* Mission Vision Grid */
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    /* Quality Commitment */
+    .quality-commitment-content {
+        flex-direction: column;
+    }
+    
+    .quality-image {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+    
+    .quality-text {
+        flex: 0 0 100%;
+    }
+    
+    /* Manufacturing Excellence */
+    .manufacturing-content {
+        flex-direction: column;
+    }
+    
+    .manufacturing-text {
+        flex: 0 0 100%;
+        order: 2;
+    }
+    
+    .manufacturing-image {
+        flex: 0 0 100%;
+        order: 1;
+        margin-bottom: 30px;
+    }
+    
+    /* Contact Form Container */
+    .contact-form-container {
+        flex-direction: column;
+    }
+    
+    .form-text {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+    
+    .contact-form-wrapper {
+        flex: 0 0 100%;
+    }
+    
+    /* Dealer Content */
+    .dealer-content {
+        flex-direction: column;
+    }
+    
+    .dealer-text {
+        flex: 0 0 100%;
+        order: 2;
+    }
+    
+    .dealer-map {
+        flex: 0 0 100%;
+        order: 1;
+        margin-bottom: 30px;
+    }
+    
+    /* Product Details */
+    .product-details-container {
+        flex-direction: column;
+    }
+    
+    .product-image-gallery {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+    
+    .product-info {
+        flex: 0 0 100%;
+    }
+    
+    /* Product Inquiry */
+    .inquiry-content {
+        flex-direction: column;
+    }
+    
+    .inquiry-text {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+    
+    .inquiry-form-wrapper {
+        flex: 0 0 100%;
+    }
+    
+    /* Benefits Grid */
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large Phones (576px to 767px) */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    /* Section Spacing */
+    :root {
+        --section-spacing: 60px;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        height: auto;
+        min-height: 500px;
+        padding: 60px 0;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+    
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Applications Grid */
+    .applications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Products Grid */
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact Cards */
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Locations Grid */
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact Form */
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+    
+    /* Form Row */
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Product Actions */
+    .product-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .product-actions .btn {
+        width: 100%;
+    }
+    
+    /* Related Products */
+    .related-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Benefits Grid */
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Technology Cards */
+    .technology-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Company Highlights */
+    .company-highlights {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Tabs Navigation */
+    .tabs-nav {
+        flex-direction: column;
+    }
+    
+    /* Section Headers */
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .section-subtitle {
+        font-size: 16px;
+    }
+    
+    /* Page Header */
+    .page-header {
+        padding: 80px 0 40px;
+    }
+    
+    .page-title {
+        font-size: 32px;
+    }
+}
+
+/* Small Phones (Up to 575px) */
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    /* Header */
+    .header-inner {
+        height: 70px;
+    }
+    
+    .mobile-menu {
+        top: 70px;
+    }
+    
+    /* Hero Section */
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    /* CTA Section */
+    .cta-title {
+        font-size: 24px;
+    }
+    
+    .cta-description {
+        font-size: 16px;
+    }
+    
+    .facility-image {
+        max-width: 95%;
+    }
+    
+    .cta-image {
+        max-width: 95%;
+    }
+    
+    /* Product Slider */
+    .slide {
+        padding: 20px;
+    }
+    
+    .slide-content h3 {
+        font-size: 24px;
+    }
+    
+    /* FAQ Question */
+    .faq-question h3 {
+        font-size: 16px;
+    }
+    
+    /* Product Details */
+    .product-name {
+        font-size: 28px;
+    }
+    
+    .product-tagline {
+        font-size: 18px;
+    }
+    
+    /* Related Products */
+    .related-products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Table Overflow */
+    .specs-table th, .specs-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    /* Filter Buttons */
+    .category-filter {
+        flex-wrap: wrap;
+    }
+    
+    /* Cards General Styling */
+    .feature-card, 
+    .application-card, 
+    .product-card,
+    .benefit-card, 
+    .mission-vision-card, 
+    .tech-card, 
+    .contact-card, 
+    .location-card {
+        padding: 20px;
+    }
+    
+    /* Forms Styling */
+    .form-group input, 
+    .form-group textarea, 
+    .form-group select {
+        padding: 10px;
+    }
+    
+    .submit-btn {
+        padding: 12px;
+    }
+}
